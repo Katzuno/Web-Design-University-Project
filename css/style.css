@@ -1,0 +1,449 @@
+* 
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html
+{
+    width: 100%;
+    font-family: "Open-Sans", sans-serif;
+    font-size: 16px;
+    color: #444444;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (min-width: 721px) and (max-width: 1024px)
+{
+    html
+    {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 720px)
+{
+    html
+    {
+        font-size: 8px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+a
+{
+    color: #444444;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #0090FF;
+}
+
+.more
+{
+    color: #0090FF;
+}
+
+.more:hover
+{
+    text-decoration: underline;
+}
+
+.menu > li
+{
+    display: inline;
+}
+
+
+
+.logo
+{
+    font-size: 2.5em;
+    font-family: "Helvetica Neue";
+    font-weight: bold;
+}
+
+.nav-link
+{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+
+.dropdown {
+    display: inline-block;
+    border: 1rem solid transparent;
+}
+
+.submenu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    list-style-type: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.submenu > li
+{
+    display: inline;
+    border: 1rem solid transparent; /* Adaugat pentru ca de multe ori utilizatorul nu mentine mouse-ul drept pe meniul orizontal si poate deveni frustrant daca trebuie redeschis mereu */
+}
+
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+
+.row
+{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.inline-images img
+{
+    width: 15rem;
+    height: 15rem;
+    display: inline;
+}
+
+.full-mobility-bg
+{
+    width: 100%;
+    height: 30rem;
+    background: url('../images/full-mobility-mobile.jpg') no-repeat;
+    background-size: cover;
+    display: block;
+}
+
+.row > img
+{
+    width: 20rem;
+    height: 20rem;
+}
+
+.product
+{
+    background: linear-gradient(to bottom, #f2f2f2, #e0e0e0);
+    border-right: 0.15rem solid white;
+    display: inline-block;
+}
+
+.content {
+    text-align: center;
+}
+
+.content-title
+{
+    font-size: 2.5rem;
+}
+.product h2
+{
+    
+    padding-top: 0.8rem;
+    font-size: 2.8rem;
+}
+
+section > h6
+{
+    display: none;
+}
+
+.product > .content > img
+{
+    width: 80%;
+    height: 15rem;
+    width: 15rem;
+}
+
+#why-smart
+{
+    width: 100%;
+}
+
+.footer-img
+{
+    background-image: url('../images/why-smart.jpg');
+    background-size: 100% 100%;
+    height: 15rem;
+}
+
+.footer-img > .content
+{
+    vertical-align: middle;
+    font-size: 1.8em;
+}
+
+.footer-img > .content > h2
+{
+    color: white;
+}
+
+.siri
+{
+    background-image: url('../images/siri.jpg') !important;
+}
+
+
+.high-quality-camera
+{
+    background-image: url('../images/camera.jpg') !important;
+}
+
+#main-products > h2
+{
+    text-align: center;
+}
+
+#product-photo-motion
+{
+    background: url('../images/motion-sensor-header.jpg') no-repeat fixed bottom;
+    background-size: cover;
+    height: 35rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items:center;
+}
+
+#product-photo-intercom
+{
+    background: url('../images/header_intercome.jpg') no-repeat fixed bottom;
+    background-size: cover;
+    height: 35rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    color: white;
+}
+
+#product-photo-intercom > .title
+{
+    margin-left: 41%;
+    font-size: 2rem;
+}
+
+hr::before
+{
+    content: "<br/>";
+}
+
+hr
+{
+    display: block;
+    width: 10rem;
+    border: 0;
+    height: 0.055rem;
+    background-color: #0090ff;
+    margin-bottom: 0.5rem;
+}
+#product-photo-intercom > hr
+{
+    width: 15rem;
+    background: linear-gradient(to right, #00FCFB, #0090ff);
+}
+
+#marketing-text
+{
+    background: url('../images/intro-desktop.jpg') no-repeat fixed bottom;
+    background-size: cover;
+    height: 25rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    text-align:justify;
+    color: white;
+}
+
+#marketing-text > p
+{
+    margin-left: 35%;
+}
+
+video
+{
+    width: 100%;
+    height: 100%;
+}
+
+#video-player
+{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+figcaption
+{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.title
+{
+    text-align: center;
+}
+
+.mobility
+{
+    background: url('../images/inspired-mobile.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    color: white;
+}
+
+.mobility > h2
+{
+    padding-top: 14rem;
+}
+
+.left
+{
+    float: left;
+}
+
+.gate
+{
+    background: url('../images/gate_open.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30rem;
+    color: white;
+}
+
+.gate > figcaption
+{
+    color: #444444;
+}
+
+#product-photo-ghome
+{
+    background: url('../images/ghome-main-banner.jpg') no-repeat fixed;
+    background-size: contain;
+    height: 30rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    color: #444444;
+}
+
+#product-photo-ghome > .title
+{
+    margin-left: 25%;
+    font-size: 2rem;
+}
+
+#google-assistant img
+{
+    width: 100%;
+    height: 30rem;
+    position: relative;
+}
+
+.ghome-bg
+{
+    width: 100%;
+    height: 30rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+}
+
+.ghome1
+{
+    background-image: url('../images/ghome1.jpg');
+}
+
+.ghome2
+{
+    background-image: url('../images/ghome2.jpg');
+}
+
+.ghome3
+{
+    background-image: url('../images/ghome3.jpg');
+}
+
+.ghome4
+{
+    background-image: url('../images/ghome4.jpg');
+}
+
+.netflix
+{
+    background-image: url('../images/ghome-footer.jpg') !important;
+}
+
+#contact-photo-header
+{
+    background: url('../images/header-contact.jpg') no-repeat;
+    background-size: cover;
+    height: 30rem;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    color: white;
+}
+
+#contact-photo-header > .title
+{
+    margin-left: 38%;
+    font-size: 2rem;
+}
+
+.subtitle
+{
+    font-size: 3rem;
+}
+
+#map 
+{
+    height: 30rem;
+}
+
+.scroll-top
+{
+    text-align: right;
+    display: block;
+}
+
+.center { 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    text-align: center; 
+}
+
+@media (min-width: 768px)
+{
+    .product 
+    {
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+}

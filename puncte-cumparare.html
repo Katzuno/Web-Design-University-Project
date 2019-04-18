@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title> Case inteligente </title>
+		<meta charset = "UTF-8"/>
+		<meta name = "author" content = "Henning Erik"/>
+		<meta name = "keywords" content = "smart, house, puncte de cumparare, dispozitive inteligente"/>
+		<meta name = "description" content = "Aici veti gasi unde ne puteti contacta pentru a achizitiona dispozitivele noastre SMART."/>
+        <meta name = "viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" type="image/png" href="images/favicon2.png" />
+        <link href="css/style.css" rel="stylesheet" type = "text/css"/>
+        <link href="css/slider.css" rel="stylesheet" type = "text/css"/>
+        
+	</head>
+	<body>
+        <header>
+            <nav>
+                    <ul class = "menu">
+                        <li> <a class = "logo" href = "index.html"> SMART </a></li>
+                        <li> <a class = "nav-link" href = "google-home.html">Google HOME </a></li>
+                        <li class = "dropdown"> <a class = "nav-link" href = "produse.html"> Produse </a>
+                            <ul class = "submenu">
+                                <li> <a class = "nav-link" href = "google-home.html"> Google Home </a></li>
+                                <li> <a class = "nav-link" href = "intercom.html"> Intercom </a></li>
+                                <li> <a class = "nav-link" href = "motion-sensor.html"> Senzori de miscare </a></li>
+                            </ul>
+                        </li>
+                        <li> <a class = "nav-link" href = "puncte-cumparare.html"> Puncte de cumparare </a> </li>
+                        <li> <a class = "nav-link" href = "demo.html"> Demonstratie </a> </li>
+                        <li> <a class = "nav-link" href = "contact.html"> Contact </a> </li>
+                    </ul>
+                </nav>
+            </header>
+        <main>
+            <article>
+                <div id = "contact-photo-header">
+                    <h1 class = "title"> Unde ne gasesti?</h1>
+                </div>
+
+                <section id = "sedii">
+                        <h2 class = "center"> Unde ne puteti gasi? </h2>
+                        <address> Green Gate, Etaj 11, Bulevardul Tudor Vladimirescu 22</address>
+                        <div id="map"></div>
+                        <script>
+                    
+                          function initMap() {
+                            var myLatLng = {lat: 44.4191284, lng: 26.0773707};
+                    
+                            var map = new google.maps.Map(document.getElementById('map'), {
+                              zoom: 13,
+                              center: myLatLng
+                            });
+                    
+                            var marker = new google.maps.Marker({
+                              position: myLatLng,
+                              map: map,
+                              title: 'Smart Centre!'
+                            });
+                          }
+                        </script>
+                </section>
+            </article>
+        </main>
+            <footer>
+
+            
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmDiBFiCv1sRv84-tC9hAfGz8MZj0Ak7I&callback=initMap"></script>
+            <script src = "js/main.js"></script>
+        </footer>
+	</body>
+</html>
